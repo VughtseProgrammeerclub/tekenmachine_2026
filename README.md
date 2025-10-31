@@ -16,7 +16,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 #### Pantograaf
 
-{Afbeelding}
+![Pantograaf](pantograaf.jpg)
 
 * Kan worden gedaan met Arduino, Raspberry Pi Pico of micro:bit
 * Kritische onderdelen zijn de drie servo's. Je kan aan de slag met de bijzonder goedkope blauwe SG90-servo's (€ 2 per stuk), maar met een servo van ongeveer € 5-10 met metalen tandwielen is het resultaat zeker beter. Voor deze eenvoudige servo's zijn geen aparte driverbordjes nodig. Wel moet je rekening houden met een aparte 5V-voeding.
@@ -26,7 +26,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 #### Polargraaf
 
-{Afbeelding}
+![Polargraaf](polargraph.jpg)
 
 * Kan worden gedaan met Arduino, Raspberry Pi Pico of micro:bit
 * Hiervoor hebben twee stappenmotoren en één servo nodig. De goedkoopste stappenmotoren inclusief driver kosten € 2-5 per stuk (https://www.tinytronics.nl/nl/mechanica-en-actuatoren/motoren/stappenmotoren/stappen-motor-met-uln2003-motoraansturing). De servo hoeft hier niet van de beste kwaliteit te zijn (€ 2 per stuk). Voor een beter resultaat is een wat betere stappenmotor wel aan te bevelen. Deze kosten € 10-15 per stuk(https://www.tinytronics.nl/nl/mechanica-en-actuatoren/motoren/stappenmotoren/stappenmotor-0.14n.m-1a-nema14-jst-ph-connector), hierbij komt dan nog twee drivers van een paar Euro per stuk (https://nl.aliexpress.com/item/1005009465430336.html).

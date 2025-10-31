@@ -16,7 +16,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 #### Pantograaf
 
-![Pantograaf](pantograaf.jpg)
+![Pantograaf](pantograaf.jpeg)
 
 * Kan worden gedaan met Arduino, Raspberry Pi Pico of micro:bit
 * Kritische onderdelen zijn de drie servo's. Je kan aan de slag met de bijzonder goedkope blauwe SG90-servo's (€ 2 per stuk), maar met een servo van ongeveer € 5-10 met metalen tandwielen is het resultaat zeker beter. Voor deze eenvoudige servo's zijn geen aparte driverbordjes nodig. Wel moet je rekening houden met een aparte 5V-voeding.

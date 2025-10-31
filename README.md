@@ -35,7 +35,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 
 
-#### Tekenkarretje ???
+### Tekenkarretje ???
 
 Hier heb ik nog goed over nagedacht. Twee jaar geleden heb ik bij Huis73 een project gedan met een Arduino-robotkarretje. Hier heb ik nog de meeste spullen voor, maar het was achteraf gezien best wel een complex project em om enigszinds naukeurig te kunnen tekenen heb je goede motoren en wielen nodig. Ik denk dat dit te complex, te duur (minimaal € 50) en te veel voorbereidingstijd gaat kosten. Als er echter mensen zijn die de uitdaging aan willen gaan dankan dat natuurlijk altijd en er zijn ook voldoende mensen om te helpen/adviseren.
 

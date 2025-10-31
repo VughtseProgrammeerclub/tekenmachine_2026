@@ -14,7 +14,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 
 
-#### Pantograaf
+### Pantograaf
 
 ![Pantograaf](pantograaf.jpeg)
 
@@ -24,7 +24,7 @@ Bij de clubbijeenkomst zijn er drie ideeën overgebleven voor een nieuw programm
 
 
 
-#### Polargraaf
+### Polargraaf
 
 ![Polargraaf](polargraph.jpg)
 

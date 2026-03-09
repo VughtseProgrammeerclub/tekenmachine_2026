@@ -32,6 +32,11 @@ Pak het gedwonloade ZIP-bestand uit.
 1. Start Thonny
 2. Open bgt.py
 3. Start het programma
+4. Pas de hoeken aan
 
 Dat ziet er zo uit:
-[Open de video (MP4)](simulatie.mp4)
+<p align="center">
+<a href="https://youtu.be/xvEm5joO8kY">
+<img src="https://img.youtube.com/vi/xvEm5joO8kY/0.jpg" width="600">
+</a>
+</p>

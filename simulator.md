@@ -34,4 +34,4 @@ Pak het gedwonloade ZIP-bestand uit.
 3. Start het programma
 
 Dat ziet er zo uit:
-
+[Open de video (MP4)](simulatie.mp4)

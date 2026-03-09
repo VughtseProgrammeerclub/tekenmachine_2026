@@ -11,3 +11,10 @@ De rode lijn is de onderarm
 ## bgt.py
 De simulatie zit volgens de documentatie in bgt.py. Dit bestand zit inderdaad in de GitHub van Brachiograph (dus **niet** de GitHub van de Vughtse Programmeer Club) die te vinden is op https://github.com/evildmp/BrachioGraph/tree/main. 
 Ik heb eerst geprobeerd om het bestand te downloaden en te starten in Thonny, maar dat gaf allerlei foutmeldingen. Rudy gaf me deze tip om de simulatie toch aan de gang te krijgen:
+<p align="center">
+  <img src="rudy.png" width="400">
+</p>
+
+Dit is echter de Linux-oplossing en ik werk op Windows. Dit zijn de stappen om het in Windows voor elkaar te krijgen. **Ik ga er vanuit dat je Python-programmeeromgeving (bijvoorbeeld Thonny) al hebt geïnstalleerd.**
+### Stap 1: De Github downloaden
+Ik heb voor het gemak de hele Github https://github.com/evildmp/BrachioGraph/tree/main gedownload. Dat gaat zo:

@@ -46,7 +46,10 @@ print(hoek_graden)
 Op het einde van de code worden de *hoek* (radialen) omgezet naar *hoek_graden*. 360 graden komen overeen met 2π (~6,26) radialen.
 
 **Hoek elleboog
-Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm) , onderarm (6 cm) en L. Van deze laatste is de lengte te bepalen met de stelling van Pythagoras. In formule vorm ziet dit er zo uit:
+Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm) , onderarm (6 cm) en L. In formule vorm ziet dit er zo uit:
+<img src="formule_cosinusregel2.png" alt="Cosinusregel" width="500">
+
+Als we de lengtes van de armen invullen en op de plaats van **L** de eerdere stelling van Pythagoras zetten, blijft dit over:
 
 
 **Werk hier later verder aan**

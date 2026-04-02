@@ -11,3 +11,14 @@ Meetkundig ziet de situatie er zo uit:
 De uitdaging is nu om een algoritme te bedenken waarmee bij een xy-coördinaat de hoek van de schouderservo **∠S** en van de elleboogservo **∠E** te bepalen.
 
 Als eerste hebben we hiervoor de afstand **L** van de pen (x,y) tot de schouderservo (0,0) nodig. Dit kan met de stelling van Pythagoras:
+<img src="formule_pythagoras.png" alt="Stelling van Pythagoras" width="500">
+
+In Python ziet dat er zo uit:
+
+```python
+import math
+
+L = math.sqrt(x**2 + y**2)
+```
+
+Nu we **L** weten kunnen we alle hoeken bepalen. Dit gaat met de **cosinusformule**:

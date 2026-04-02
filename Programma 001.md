@@ -47,9 +47,20 @@ Op het einde van de code worden de *hoek* (radialen) omgezet naar *hoek_graden*.
 
 **Hoek elleboog
 Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm) , onderarm (6 cm) en L. In formule vorm ziet dit er zo uit:
+
 <img src="formule_cosinusregel2.png" alt="Cosinusregel" width="500">
 
 Als we de lengtes van de armen invullen en op de plaats van **L** de eerdere stelling van Pythagoras zetten, blijft dit over:
+
+<img src="formule_hoek_E.png" alt="Formule voor hoek E" width="500">
+
+```Python
+import math
+
+hoek_E = math.degrees(
+    math.acos((100 - x**2 - y**2) / 96)
+)
+```
 
 
 **Werk hier later verder aan**

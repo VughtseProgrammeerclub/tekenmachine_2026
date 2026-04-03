@@ -1,6 +1,7 @@
 # Van hoeken naar xy-coördinaten
 Met de twee servo's kunnen we de pen naar ieder punt op het papier laten bewegen. Dit gaat echter in gebogen lijnen en ik wil uiteindelijk een rechte lijn kunnen tekenen. Hier komt wat goniometrie bij kijken.
 Meetkundig ziet de situatie er zo uit:
+
 <img src="gonio.png" alt="VPC tekening" width="500">
 
 * De schouderservo bevindt zich op punt (0,0) en heeft een draaibereik van 180° **rechtsom**
@@ -67,6 +68,7 @@ Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen 
 <img src="gonio_detail.png" alt="Detail schouder" width="700">
 
 De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
+
 De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
 
 
@@ -93,10 +95,10 @@ print(hoek_a)
 ```
 ### Cosinusregel voor ∠b
 
-<img src="formule_hoek_b_1.png" alt="Formule voor hoek a" height="100">
+<img src="formule_hoek_b_1.png" alt="Formule voor hoek b" height="100">
 Als we hierin Pythagoras invullen dan kan er veel worden weggestreept en blijft dit over:
 
-<img src="formule_hoek_a_2.png" alt="Formule voor hoek a" height="400">
+<img src="formule_hoek_a_2.png" alt="Formule voor hoek b met Pythagoras" height="400">
 
 Dit is de hoek met de X-as
 
@@ -107,4 +109,33 @@ hoek_b = math.degrees(
     math.acos(x / math.sqrt(x**2 + y**2))
 )
 ```
-**Werk hier later verder aan**
+### Berekening ∠S
+De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
+<img src="formule_hoek_s.png" alt="Formule voor hoek S" height="200">
+
+De code voor het bepalen van de hoek van de schouderservo is dan:
+
+```Python
+import math
+
+# lengte van lijn naar doelpunt
+L = math.sqrt(x**2 + y**2)
+
+# hoek a
+hoek_a = math.degrees(
+    math.acos(
+        (x**2 + y**2 + 28)
+        / (16 * L)
+    )
+)
+
+# hoek b
+hoek_b = math.degrees(
+    math.acos(x / L)
+)
+
+# schouderhoek
+hoek_S = 180 - hoek_a - hoek_b
+
+print(hoek_S)
+```

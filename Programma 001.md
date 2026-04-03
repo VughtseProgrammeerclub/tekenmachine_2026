@@ -1,15 +1,15 @@
-# Van xy-coördinaten naar hoeken
+# Van xy-coördinaten naar servohoeken
 Met de twee servo’s kunnen we de pen naar elk punt op het papier bewegen. De servo’s bewegen de armen in draaiende bewegingen. Om de pen uiteindelijk een rechte lijn te laten tekenen, moeten we voor meerdere xy-punten steeds de juiste hoeken berekenen. Hier komt wat goniometrie bij kijken.
 Meetkundig ziet de situatie er zo uit:
 
 <img src="gonio.png" alt="VPC tekening" width="500">
 
 * De schouderservo bevindt zich op punt (0,0) en heeft een draaibereik van 180° **rechtsom**
-* De elleboogservo zit tussen de bovenarm (8 cm) en de onderarm (6cm) en heeft ook een draaibereik van 180°. Omdat deze servo op de kop is gemonteerd is de draairichting **linksom**
+* De elleboogservo zit tussen de bovenarm (8 cm) en de onderarm (6 cm) en heeft ook een draaibereik van 180°. Omdat deze servo op de kop is gemonteerd is de draairichting **linksom**
 * De pen staat op het coördinaat (x,y)
 
 ## Uitdaging
-De uitdaging is nu om een algoritme te bedenken waarmee bij een xy-coördinaat de hoek van de schouderservo **∠S** en van de elleboogservo **∠E** te bepalen.
+De uitdaging is nu om een algoritme te bedenken waarmee we bij een xy-coördinaat de hoek van de schouderservo **∠S** en van de elleboogservo **∠E** kunnen bepalen.
 
 Als eerste hebben we hiervoor de afstand **L** van de pen (x,y) tot de schouderservo (0,0) nodig. Dit kan met de **stelling van Pythagoras**:
 
@@ -33,7 +33,7 @@ $$
 
 Hierin is *cos<sup>-1</sup>* het 'omgekeerde' van de cosinus. Vaak wordt dit aangeduid met *arccos*. In Python is dit *math.acos(x)*.
 
-Met deze regel kan je iedere hoek in een driehoek bepalen als de lengtes van de drie zijden bekend zijn.
+Met deze regel kun je iedere hoek in een driehoek bepalen als de lengtes van de drie zijden bekend zijn.
 Hierboven is C de hoek die tegenover zijde c ligt.
 In Python doe je dit zo:
 
@@ -52,10 +52,10 @@ hoek_graden = math.degrees(hoek)
 print(hoek_graden)
 ```
 
-Op het einde van de code worden de *hoek* (radialen) omgezet naar *hoek_graden*. 360 graden komen overeen met 2π (~6,28) radialen.
+Aan het einde van de code wordt *hoek* (in radialen) omgezet naar *hoek_graden*.
 
 ## Hoek elleboog
-Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm) , onderarm (6 cm) en L. In formule vorm ziet dit er zo uit:
+Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm), onderarm (6 cm) en L. In formule vorm ziet dit er zo uit:
 
 $$
 \angle E = \arccos\left(\frac{L_{bovenarm}^2 + L_{onderarm}^2 - L^2}{2 \cdot L_{bovenarm} \cdot L_{onderarm}}\right)

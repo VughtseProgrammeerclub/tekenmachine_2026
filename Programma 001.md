@@ -78,9 +78,9 @@ De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
     <td><b>∠a</b></td>
     <td><img src="formule_hoek_a_1.png" alt="Formule voor hoek a" width="400"><br>
     Hierin vervangen we L door de eerdere stelling van Pythagoras:<br>
-    <img src="formule_hoek_a_2.png" alt="Formule voor hoek a" width="400">
+    <img src="formule_hoek_a_2.png" alt="Formule voor hoek a gesubstitueerd" width="400">
     Als we nu de bekende lengtes van de armen invullen dan houden we dit over:
-    
+     <img src="formule_hoek_a_3.png" alt="Formule voor hoek a ingevuld" width="400">
     </td>
   </tr>
   <tr>

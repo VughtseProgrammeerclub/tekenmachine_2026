@@ -64,5 +64,14 @@ hoek_E = math.degrees(
 **Hoek schouder
 Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen maken, maar veel meer dan (twee keer) de cosinusregel hebben we niet nodig. Hier een detail van de tekening van het het draaipunt rond de schouderservo.
 
+<img src="gonio_detail.png" alt="Detail schouder" width="700">
+
+De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
+De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
+
+|Hoek   |Stap 1|Stap 2|
+|:------|:------|:-----|
+|**∠a** |$\angle a = \cos^{-1}\left(\frac{L_{bovenarm}^2 + L^2 - L_{onderarm}^2}{2 \, L_{bovenarm} \, L}\right)$|
+|**∠b** |formule|vvvv|
 
 **Werk hier later verder aan**

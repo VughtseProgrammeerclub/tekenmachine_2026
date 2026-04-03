@@ -69,9 +69,29 @@ Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen 
 De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
 De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
 
+<table>
+  <tr>
+    <th>Hoek</th>
+    <th>Formules</th>
+  </tr>
+  <tr>
+    <td><b>∠a</b></td>
+    <td><img src="formule_hoek_a_1.png" alt="Formule voor hoek a" width="400"><br>
+    Hierin vervangen we L door de eerdere stelling van Pythagoras:<br>
+    <img src="formule_hoek_a_2.png" alt="Formule voor hoek a" width="400">
+    Als we nu de bekende lengtes van de armen invullen dan houden we dit over:
+    
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>In uitvoering</td>
+  </tr>
+</table>
 |Hoek   |Stap 1|Stap 2|
 |:------|:------|:-----|
 |**∠a** |<img src="formule_hoek_a_1.png" alt="Formule voor hoek E" height="100">|
+|       |<img src="formule_hoek_a_2.png" alt="Formule voor hoek E" height="100">|
 |**∠b** |formule|vvvv|
 
 **Werk hier later verder aan**

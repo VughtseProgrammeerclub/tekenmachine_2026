@@ -45,7 +45,7 @@ print(hoek_graden)
 
 Op het einde van de code worden de *hoek* (radialen) omgezet naar *hoek_graden*. 360 graden komen overeen met 2π (~6,26) radialen.
 
-**Hoek elleboog
+## Hoek elleboog
 Als we kijken naar de elleboogservo dan zien we dat de hoek **∠E** zich in een driehoek bevindt van de bovenarm (8 cm) , onderarm (6 cm) en L. In formule vorm ziet dit er zo uit:
 
 <img src="formule_cosinusregel2.png" alt="Cosinusregel" width="500">
@@ -61,7 +61,7 @@ hoek_E = math.degrees(
     math.acos((100 - x**2 - y**2) / 96)
 )
 ```
-**Hoek schouder
+## Hoek schouder
 Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen maken, maar veel meer dan (twee keer) de cosinusregel hebben we niet nodig. Hier een detail van de tekening van het het draaipunt rond de schouderservo.
 
 <img src="gonio_detail.png" alt="Detail schouder" width="700">
@@ -69,29 +69,28 @@ Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen 
 De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
 De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
 
-<table>
-  <tr>
-    <th>Hoek</th>
-    <th>Formules</th>
-  </tr>
-  <tr>
-    <td><b>∠a</b></td>
-    <td><img src="formule_hoek_a_1.png" alt="Formule voor hoek a" width="400"><br>
-    Hierin vervangen we L door de eerdere stelling van Pythagoras:<br>
-    <img src="formule_hoek_a_2.png" alt="Formule voor hoek a gesubstitueerd" width="400">
-    Als we nu de bekende lengtes van de armen invullen dan houden we dit over:
-     <img src="formule_hoek_a_3.png" alt="Formule voor hoek a ingevuld" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>In uitvoering</td>
-  </tr>
-</table>
-|Hoek   |Stap 1|Stap 2|
-|:------|:------|:-----|
-|**∠a** |<img src="formule_hoek_a_1.png" alt="Formule voor hoek E" height="100">|
-|       |<img src="formule_hoek_a_2.png" alt="Formule voor hoek E" height="100">|
-|**∠b** |formule|vvvv|
+
+### Hoek ∠a
+
+<img src="formule_hoek_a_1.png" alt="Formule voor hoek a" width="400">
+
+Hierin vervangen we L door de eerdere stelling van Pythagoras:
+
+<img src="formule_hoek_a_2.png" alt="Formule voor hoek a gesubstitueerd" width="400">
+
+Als we nu de bekende lengtes van de armen invullen dan houden we dit over:
+
+<img src="formule_hoek_a_3.png" alt="Formule voor hoek a ingevuld" width="300">
+
+In Python ziet het er zo uit:
+
+```Python
+import math
+L = math.sqrt(x**2 + y**2)
+waarde = (x**2 + y**2 + 28) / (16 * L)
+hoek_a = math.degrees(math.acos(waarde))
+print(hoek_a)
+```
+### Hoek ∠b
 
 **Werk hier later verder aan**

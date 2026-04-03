@@ -111,7 +111,8 @@ hoek_b = math.degrees(
 ```
 ### Berekening ∠S
 De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
-<img src="formule_hoek_s.png" alt="Formule voor hoek S" height="200">
+
+<img src="formule_hoek_s.png" alt="Formule voor hoek S" height="100">
 
 De code voor het bepalen van de hoek van de schouderservo is dan:
 

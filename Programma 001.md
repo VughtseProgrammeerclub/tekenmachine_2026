@@ -1,4 +1,7 @@
 # Van xy-coördinaten naar servohoeken
+
+**LET OP: DIT IS NOG NIET GETEST!**
+
 Met de twee servo’s kunnen we de pen naar elk punt op het papier bewegen. De servo’s bewegen de armen in draaiende bewegingen. Om de pen uiteindelijk een rechte lijn te laten tekenen, moeten we voor meerdere xy-punten steeds de juiste hoeken berekenen. Hier komt wat goniometrie bij kijken.
 Meetkundig ziet de situatie er zo uit:
 
@@ -164,4 +167,50 @@ hoek_b = math.degrees(
 hoek_S = 180 - hoek_a - hoek_b
 
 print(hoek_S)
+```
+## Functies in Python
+In dit geval is het handig om de berekening van de hoeken in twee functies op te nemen in het programma:
+
+```python
+import math
+
+
+def bereken_ellebooghoek(x, y):
+    """
+    Berekent de hoek van de elleboogservo (∠E)
+    op basis van het punt (x, y).
+    """
+    waarde = (100 - x**2 - y**2) / 96
+    hoek_E = math.degrees(math.acos(waarde))
+    return hoek_E
+
+
+def bereken_schouderhoek(x, y):
+    """
+    Berekent de hoek van de schouderservo (∠S)
+    op basis van het punt (x, y).
+    """
+    L = math.sqrt(x**2 + y**2)
+
+    waarde_a = (x**2 + y**2 + 28) / (16 * L)
+    hoek_a = math.degrees(math.acos(waarde_a))
+
+    waarde_b = x / L
+    hoek_b = math.degrees(math.acos(waarde_b))
+
+    hoek_S = 180 - hoek_a - hoek_b
+    return hoek_S
+```
+
+Deze kan je dan zo gebruiken:
+
+```python
+x = 5
+y = 6
+
+schouderhoek = bereken_schouderhoek(x, y)
+ellebooghoek = bereken_ellebooghoek(x, y)
+
+print("Schouder:", schouderhoek)
+print("Elleboog:", ellebooghoek)
 ```

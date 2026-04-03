@@ -71,7 +71,7 @@ De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
 
 |Hoek   |Stap 1|Stap 2|
 |:------|:------|:-----|
-|**∠a** |$\angle a = \cos^{-1}\left(\frac{L_{bovenarm}^2 + L^2 - L_{onderarm}^2}{2 \, L_{bovenarm} \, L}\right)$|
+|**∠a** |<img src="formule_hoek_a_1.png" alt="Formule voor hoek E" height="100">|
 |**∠b** |formule|vvvv|
 
 **Werk hier later verder aan**

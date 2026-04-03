@@ -92,5 +92,19 @@ hoek_a = math.degrees(math.acos(waarde))
 print(hoek_a)
 ```
 ### Cosinusregel voor ∠b
-Hoek 
+
+<img src="formule_hoek_b_1.png" alt="Formule voor hoek a" height="100">
+Als we hierin Pythagoras invullen dan kan er veel worden weggestreept en blijft dit over:
+
+<img src="formule_hoek_a_2.png" alt="Formule voor hoek a" height="400">
+
+Dit is de hoek met de X-as
+
+In Python gaat dit zo:
+```Python
+import math
+hoek_b = math.degrees(
+    math.acos(x / math.sqrt(x**2 + y**2))
+)
+```
 **Werk hier later verder aan**

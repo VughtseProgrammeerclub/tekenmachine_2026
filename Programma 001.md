@@ -61,6 +61,8 @@ hoek_E = math.degrees(
     math.acos((100 - x**2 - y**2) / 96)
 )
 ```
+**Hoek schouder
+Voor het berekenen van de hoek van de schouderservo moeten we iets meer stappen maken, maar veel meer dan (twee keer) de cosinusregel hebben we niet nodig. Hier een detail van de tekening van het het draaipunt rond de schouderservo.
 
 
 **Werk hier later verder aan**

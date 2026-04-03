@@ -98,7 +98,7 @@ print(hoek_a)
 <img src="formule_hoek_b_1.png" alt="Formule voor hoek b" height="100">
 Als we hierin Pythagoras invullen dan kan er veel worden weggestreept en blijft dit over:
 
-<img src="formule_hoek_a_2.png" alt="Formule voor hoek b met Pythagoras" height="400">
+<img src="formule_hoek_b_2.png" alt="Formule voor hoek b met Pythagoras" height="100">
 
 Dit is de hoek met de X-as
 

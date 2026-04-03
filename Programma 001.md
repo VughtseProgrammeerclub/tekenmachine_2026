@@ -1,7 +1,7 @@
 # Van hoeken naar xy-coördinaten
 Met de twee servo's kunnen we de pen naar ieder punt op het papier laten bewegen. Dit gaat echter in gebogen lijnen en ik wil uiteindelijk een rechte lijn kunnen tekenen. Hier komt wat goniometrie bij kijken.
 Meetkundig ziet de situatie er zo uit:
-<img src="goniometrie.png" alt="VPC tekening" width="500">
+<img src="gonio.png" alt="VPC tekening" width="500">
 
 * De schouderservo bevindt zich op punt (0,0) en heeft een draaibereik van 180° **rechtsom**
 * De elleboogservo zit tussen de bovenarm (8 cm) en de onderarm (6cm) en heeft ook een draaibereik van 180°. Omdat deze servo op de kop is gemonteerd is de draairichting **linksom**
@@ -70,7 +70,7 @@ De hoek van de schouder **∠S** is 180° min (hoek **∠a** + **∠b**)
 De hoeken **∠a** en **∠b** kunnen we allebei berekenen met de cosinusregel:
 
 
-### Hoek ∠a
+### Cosinusregel voor ∠a
 
 <img src="formule_hoek_a_1.png" alt="Formule voor hoek a" width="400">
 
@@ -91,6 +91,6 @@ waarde = (x**2 + y**2 + 28) / (16 * L)
 hoek_a = math.degrees(math.acos(waarde))
 print(hoek_a)
 ```
-### Hoek ∠b
-
+### Cosinusregel voor ∠b
+Hoek 
 **Werk hier later verder aan**
